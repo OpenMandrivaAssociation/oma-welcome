@@ -1,0 +1,1 @@
+OpenMandriva Lx Welcome Page
