@@ -1,5 +1,5 @@
 Name:		oma-welcome
-Version:	0.8.0
+Version:	0.8.5
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
@@ -18,14 +18,23 @@ Introduce new users to the OpenMandriva Lx.
 %setup -c -n %{name}-%{version}
 
 %build
+#nothing to do
 
 %install
-/bin/mkdir -p %{buildroot}
-/bin/cp -axv %{buildroot}/%{name}-%{version}/* %{buildroot}/
-
+mkdir -p  %{buildroot}
+cp -axv ${RPM_BUILD_DIR}/%{name}-%{version}/* %{buildroot}/
+mkdir -p %{buildroot}/%{_sysconfdir}/xdg/autostart
+cp om-welcome.desktop %{buildroot}/%{_sysconfdir}/xdg/autostart
+rm -f %{buildroot}//om-welcome.desktop
+# desktop menu entry
+mkdir -p %{buildroot}/%{_datadir}/applications
+cp ./%{_sysconfdir}/skel/om-welcome.desktop %{buildroot}/%{_datadir}/applications
 
 %files
 %{_sysconfdir}/skel/om-welcome.desktop
 %{_bindir}/om-welcome
+%{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
 %{_datadir}/locale/*
+%{_sysconfdir}/xdg/autostart/om-welcome.desktop
+%{_datadir}/applications/om-welcome.desktop
