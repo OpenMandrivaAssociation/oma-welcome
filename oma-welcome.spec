@@ -1,5 +1,5 @@
 Name:		oma-welcome
-Version:	0.9.0
+Version:	0.9.5
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
@@ -30,11 +30,12 @@ rm -f %{buildroot}//om-welcome.desktop
 mkdir -p %{buildroot}/%{_datadir}/applications
 cp ./%{_sysconfdir}/skel/om-welcome.desktop %{buildroot}/%{_datadir}/applications
 
-%files
+%find_lang om-welcome
+
+%files -f om-welcome.lang
 %{_sysconfdir}/skel/om-welcome.desktop
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
-%{_datadir}/locale/*
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
 %{_datadir}/applications/om-welcome.desktop
