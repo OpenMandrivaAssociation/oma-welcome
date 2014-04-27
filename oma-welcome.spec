@@ -1,12 +1,11 @@
 Name:		oma-welcome
 Version:	1.0.3
-Release:	3
+Release:	4
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/panahbiru/oma-welcome
 Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.gz
-Patch0:		om-welcome.desktop.patch
 BuildArch:	noarch
 Requires:	python-qt4-webkit
 Requires:	python-qt4
@@ -17,7 +16,6 @@ Introduce new users to the OpenMandriva Lx.
 
 %prep
 %setup -qc -n %{name}-%{version}
-%patch0 -p1
 
 %build
 #nothing to do
@@ -30,8 +28,8 @@ mkdir -p %{buildroot}%{_datadir}/applications
 mkdir -p %{buildroot}%{_localedir}
 
 cp -avx usr/bin/* %{buildroot}%{_bindir}
-cp -avx etc/skel/*.desktop %{buildroot}%{_sysconfdir}/xdg/autostart
-cp -avx etc/skel/*.desktop %{buildroot}%{_datadir}/applications
+cp -avx oma-welcome.desktop %{buildroot}%{_sysconfdir}/xdg/autostart
+cp -avx oma-welcome.desktop %{buildroot}%{_datadir}/applications
 cp -avx usr/share/oma-welcome %{buildroot}%{_datadir}
 cp -avx usr/share/locale/* %{buildroot}%{_localedir}
 
