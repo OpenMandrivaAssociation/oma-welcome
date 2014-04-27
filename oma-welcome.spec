@@ -37,4 +37,4 @@ cp ./%{_sysconfdir}/skel/om-welcome.desktop %{buildroot}/%{_datadir}/application
 %{_datadir}/%{name}/*
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
 %{_datadir}/applications/om-welcome.desktop
-%{_localedir}/*/LC_MESSAGES/om-welcome.mo
+%{_localedir}/*/LC_MESSAGES/om-welcome.po
