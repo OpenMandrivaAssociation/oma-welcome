@@ -1,6 +1,6 @@
 Name:		oma-welcome
 Version:	1.0.3
-Release:	2
+Release:	3
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
@@ -27,18 +27,15 @@ mkdir -p %{buildroot}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_sysconfdir}/xdg/autostart
 mkdir -p %{buildroot}%{_datadir}/applications
-mkdir -p %{buildroot}%{_sysconfdir}/skel/Desktop
 mkdir -p %{buildroot}%{_localedir}
 
 cp -avx usr/bin/* %{buildroot}%{_bindir}
 cp -avx etc/skel/*.desktop %{buildroot}%{_sysconfdir}/xdg/autostart
-cp -avx etc/skel/*.desktop %{buildroot}%{_sysconfdir}/skel/Desktop
 cp -avx etc/skel/*.desktop %{buildroot}%{_datadir}/applications
 cp -avx usr/share/oma-welcome %{buildroot}%{_datadir}
 cp -avx usr/share/locale/* %{buildroot}%{_localedir}
 
 %files
-%{_sysconfdir}/skel/Desktop/om-welcome.desktop
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
