@@ -30,9 +30,7 @@ rm -f %{buildroot}//om-welcome.desktop
 mkdir -p %{buildroot}/%{_datadir}/applications
 cp ./%{_sysconfdir}/skel/om-welcome.desktop %{buildroot}/%{_datadir}/applications
 
-%find_lang om-welcome om-welcome
-
-%files -f om-welcome.lang
+%files
 %{_sysconfdir}/skel/om-welcome.desktop
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
