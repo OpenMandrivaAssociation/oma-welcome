@@ -5,7 +5,7 @@ Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/panahbiru/oma-welcome
-Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 Requires:	python-qt4-webkit
 Requires:	python-qt4
