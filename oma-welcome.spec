@@ -6,6 +6,9 @@ License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/panahbiru/oma-welcome
 Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
+Patch0:		oma-welcome-1.0.3-fix-makefile.patch
+Patch1:		oma-welcome-1.0.3-use-by-default-s-c-p.patch
+Patch2:		oma-welcome-1.0.3-fix-desktop-file.patch
 BuildArch:	noarch
 Requires:	python-qt4-webkit
 Requires:	python-qt4
@@ -16,25 +19,13 @@ Introduce new users to the OpenMandriva Lx.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 #nothing to do
 
 %install
-mkdir -p %{buildroot}
-mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{_sysconfdir}/xdg/autostart
-mkdir -p %{buildroot}%{_datadir}/applications
-mkdir -p %{buildroot}%{_localedir}
-
-cp -avx usr/bin/* %{buildroot}%{_bindir}
-cp -avx om-welcome.desktop %{buildroot}%{_sysconfdir}/xdg/autostart
-cp -avx om-welcome.desktop %{buildroot}%{_datadir}/applications
-cp -avx usr/share/oma-welcome %{buildroot}%{_datadir}
-for i in en fr id it pt_BR tr; do
-mkdir -p %{buildroot}%{_localedir}/$i/LC_MESSAGES
-cp -avx locale/$i/* %{buildroot}%{_localedir}/$i/LC_MESSAGES ;
-done
+%makeinstall_std
 
 %files
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
