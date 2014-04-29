@@ -1,0 +1,18 @@
+diff -Naur oma-welcome-1.0.3/etc/skel/om-welcome.desktop oma-welcome-1.0.3.tpg/etc/skel/om-welcome.desktop
+--- oma-welcome-1.0.3/etc/skel/om-welcome.desktop	2014-04-26 17:58:29.000000000 +0000
++++ oma-welcome-1.0.3.tpg/etc/skel/om-welcome.desktop	2014-04-29 18:53:02.006255342 +0000
+@@ -7,4 +7,4 @@
+ Icon=openmandriva
+ Type=Application
+ Terminal=false
+-Categories=Qt;KDE;
++Categories=Qt;KDE;Settings;
+diff -Naur oma-welcome-1.0.3/om-welcome.desktop oma-welcome-1.0.3.tpg/om-welcome.desktop
+--- oma-welcome-1.0.3/om-welcome.desktop	2014-04-27 19:41:57.000000000 +0000
++++ oma-welcome-1.0.3.tpg/om-welcome.desktop	2014-04-29 18:53:07.038391446 +0000
+@@ -7,4 +7,4 @@
+ Icon=openmandriva
+ Type=Application
+ Terminal=false
+-Categories=Qt;KDE;Settings;
++Categories=Qt;KDE;
