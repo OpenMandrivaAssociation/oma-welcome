@@ -7,7 +7,7 @@ diff -Naur oma-welcome-1.0.3/usr/share/oma-welcome/news.sh.htm oma-welcome-1.0.3
  					<ul>
 -						<li><a>Kernel 3.13.11 NRJ-QL</a></li>
 -						<li><a>KDE 4.12.4</a></li>
-+						<li><a>Kernel 3.15.7 NRJ-QL</a></li>
++						<li><a>Kernel 3.15.8 NRJ-QL</a></li>
 +						<li><a>KDE 4.13.3</a></li>
  						<li><a>LibreOffice 4.2.3</a></li>
  						<li><a>$controlcenter</a></li>
@@ -17,7 +17,7 @@ diff -Naur oma-welcome-1.0.3/usr/share/oma-welcome/news.sh.htm oma-welcome-1.0.3
  							<img src="images/tux.png"/>
  						 </div>
 -						<h3 class="titlePage">Kernel 3.13.11 NRJ-QL</h3>
-+						<h3 class="titlePage">Kernel 3.15.7 NRJ-QL</h3>
++						<h3 class="titlePage">Kernel 3.15.8 NRJ-QL</h3>
  						<p>$kerneldesc</p>
  					</div>
  				</div>
