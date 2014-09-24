@@ -1,6 +1,6 @@
 Name:		oma-welcome
 Version:	1.0.5
-Release:	2
+Release:	3
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
