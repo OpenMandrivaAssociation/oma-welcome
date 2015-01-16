@@ -10,6 +10,7 @@ BuildArch:	noarch
 Requires:	python2-qt4-webkit
 Requires:	python2-qt4-core
 Requires:	python2-webpy
+Requires:	python2-sip
 
 %description
 Introduce new users to the OpenMandriva Lx.
