@@ -11,6 +11,7 @@ Requires:	python2-qt4-webkit
 Requires:	python2-qt4-core
 Requires:	python2-webpy
 Requires:	python2-sip
+Requires:	python2-cherrypy
 
 %description
 Introduce new users to the OpenMandriva Lx.
