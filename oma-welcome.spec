@@ -1,15 +1,15 @@
 Name:		oma-welcome
 Version:	1.0.5
-Release:	5
+Release:	6
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/panahbiru/oma-welcome
 Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
-Requires:	python-qt4-webkit
-Requires:	python-qt4
-Requires:	python-webpy
+Requires:	python2-qt4-webkit
+Requires:	python2-qt4-core
+Requires:	python2-webpy
 
 %description
 Introduce new users to the OpenMandriva Lx.
