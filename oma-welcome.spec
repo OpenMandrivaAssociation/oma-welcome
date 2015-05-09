@@ -1,16 +1,12 @@
 Name:		oma-welcome
-Version:	1.0.5
-Release:	5
+Version:	1.0.5.1
+Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
-URL:		https://github.com/panahbiru/oma-welcome
-Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
-#Patch0:		oma-welcome-1.0.3-fix-makefile.patch
-#Patch1:		oma-welcome-1.0.3-use-by-default-s-c-p.patch
-#Patch2:		oma-welcome-1.0.3-fix-desktop-file.patch
-#Patch3:		oma-welcome-1.0.3-add-32bit-medias.patch
-#Patch4:		oma-welcome-1.0.3-fix-various-software-versions.patch
+URL:		https://github.com/cris-b/oma-welcome
+#  git archive --format=tar --prefix=oma-welcome-%{version}/ master | xz >oma-welcome-%{version}.tar.xz
+Source0:	%{name}-%{version}.tar.xz
 BuildArch:	noarch
 Requires:	python-qt4-webkit
 Requires:	python-qt4

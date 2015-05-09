@@ -1,7 +1,0 @@
-diff -Naur oma-welcome-1.0.3/usr/share/oma-welcome/apps/abrir-drakprint.run oma-welcome-1.0.3.tpg/usr/share/oma-welcome/apps/abrir-drakprint.run
---- oma-welcome-1.0.3/usr/share/oma-welcome/apps/abrir-drakprint.run	2014-04-27 19:05:35.000000000 +0000
-+++ oma-welcome-1.0.3.tpg/usr/share/oma-welcome/apps/abrir-drakprint.run	2014-04-29 17:53:25.434175646 +0000
-@@ -1 +1 @@
--firefox http://localhost:631/
-\ No newline at end of file
-+/usr/bin/system-config-printer
