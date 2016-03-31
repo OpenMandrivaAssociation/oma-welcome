@@ -1,17 +1,17 @@
 Name:		oma-welcome
-Version:	1.0.5
-Release:	8
+Version:	1.1.0.0
+Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
-URL:		https://github.com/panahbiru/oma-welcome
+URL:		https://github.com/cris-b/oma-welcome
 Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
-Patch0:		oma-welcome-1.0.5-use-py2.patch
+Patch0:         oma-welcome-1.0.5-use-py2.patch
 BuildArch:	noarch
-Requires:	python2-qt4-gui
-Requires:	python2-qt4-network
-Requires:	python2-qt4-webkit
-Requires:	python2-qt4-core
+Requires:	python2-qt5-gui
+Requires:	python2-qt5-network
+Requires:	python2-qt5-webkit
+Requires:	python2-qt5-core
 Requires:	python2-webpy
 Requires:	python2-sip
 Requires:	python2-cherrypy
@@ -29,10 +29,11 @@ Introduce new users to the OpenMandriva Lx.
 %install
 %makeinstall_std
 
-%files
+%find_lang om-welcome
+
+%files -f om-welcome.lang
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
 %{_datadir}/applications/om-welcome.desktop
-%{_localedir}/*/LC_MESSAGES/om-welcome.*o
