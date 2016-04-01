@@ -1,6 +1,6 @@
 Name:		oma-welcome
 Version:	1.1.0.0
-Release:	1
+Release:	2
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
@@ -12,6 +12,8 @@ Requires:	python2-qt5-gui
 Requires:	python2-qt5-network
 Requires:	python2-qt5-webkit
 Requires:	python2-qt5-core
+Requires:	python2-qt5-webkitwidgets
+Requires:	python2-qt5-widgets
 Requires:	python2-webpy
 Requires:	python2-sip
 Requires:	python2-cherrypy
