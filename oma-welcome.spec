@@ -1,16 +1,17 @@
 Name:		oma-welcome
-Version:	1.1.0.0
+Version:	1.2.0.0
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/cris-b/oma-welcome
 Source0:	http://code.emka.web.id/demo/omv/%{name}/%{name}-%{version}.tar.xz
+# still needs python2 as web.py has not been ported to python3
 Patch0:         oma-welcome-1.0.5-use-py2.patch
 BuildArch:	noarch
 Requires:	python2-qt5-gui
 Requires:	python2-qt5-network
-Requires:	python2-qt5-webkit
+Requires:	python2-qt5-webengine
 Requires:	python2-qt5-core
 Requires:	python2-webpy
 Requires:	python2-sip
