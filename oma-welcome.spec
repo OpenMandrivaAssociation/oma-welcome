@@ -13,6 +13,9 @@ Requires:	python2-qt5-gui
 Requires:	python2-qt5-network
 Requires:	python2-qt5-webengine
 Requires:	python2-qt5-core
+Requires:	python2-qt5-webkitwidgets
+Requires:	python2-qt5-widgets
+Requires:	python2-qt5-printsupport
 Requires:	python2-webpy
 Requires:	python2-sip
 Requires:	python2-cherrypy
