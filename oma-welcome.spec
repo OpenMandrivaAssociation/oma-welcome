@@ -8,6 +8,7 @@ URL:		https://github.com/OpenMandrivaAssociation/oma-welcome
 Source0:	%{name}-%{version}.tar.xz
 Requires:	kdialog
 BuildRequires:	cmake
+BuildRequires:	qmake5
 BuildRequires:	ninja
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
