@@ -1,24 +1,18 @@
 Name:		oma-welcome
-Version:	1.2.0.4
+Version:	2.0
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
-URL:		https://github.com/cris-b/oma-welcome
+URL:		https://github.com/OpenMandrivaAssociation/oma-welcome
 Source0:	%{name}-%{version}.tar.xz
-# still needs python2 as web.py has not been ported to python3
-Patch0:         oma-welcome-1.0.5-use-py2.patch
-BuildArch:	noarch
 Requires:	kdialog
-Requires:	python2-qt5-gui
-Requires:	python2-qt5-network
-Requires:	python2-qt5-webenginewidgets
-Requires:	python2-qt5-core
-Requires:	python2-qt5-widgets
-Requires:	python2-qt5-printsupport
-Requires:	python2-webpy
-Requires:	python2-sip
-Requires:	python2-cherrypy
+BuildRequires:	cmake
+BuildRequires:	ninja
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5WebEngineWidgets)
 
 %description
 Introduce new users to the OpenMandriva Lx.
@@ -28,7 +22,9 @@ Introduce new users to the OpenMandriva Lx.
 %apply_patches
 
 %build
-#nothing to do
+cd launcher
+CXXFLAGS="%{optflags}" LDFLAGS="%{optflags}" cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} -G Ninja
+ninja
 
 %install
 %makeinstall_std
