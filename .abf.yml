@@ -1,6 +1,2 @@
-removed_sources:
-  oma-welcome-1.0.5.1.tar.xz: c0d7e66f3a3e8343d4bda9cb79760c172aecf996
-  oma-welcome-1.0.5.2.tar.xz: 07d534b3590597a57766b43000d813df22e8bb43
-  oma-welcome-1.0.5.tar.xz: 6cc3d4f700e2f553e968402b94686879c543b651
 sources:
-  oma-welcome-1.0.5.3.tar.xz: fccc102ecb01e11c1ea3acd184828c82853f24f5
+  oma-welcome-1.0.6.0.tar.xz: 21f2a8d2038ab18a4d55858eacafbf4b34c8964b
