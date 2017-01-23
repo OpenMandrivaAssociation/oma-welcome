@@ -1,19 +1,15 @@
 Name:		oma-welcome
-Version:	2.0.4
+Version:	2.0.5
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/oma-welcome
-Source0:	%{name}-%{version}.tar.xz
+Source0:	https://github.com/OpenMandrivaSoftware/oma-welcome/archive/%{version}.tar.gz
 Requires:	kdialog
-BuildRequires:	cmake
-BuildRequires:	qmake5
-BuildRequires:	ninja
-BuildRequires:	cmake(Qt5Core)
-BuildRequires:	cmake(Qt5Gui)
-BuildRequires:	cmake(Qt5Widgets)
-BuildRequires:	cmake(Qt5WebEngineWidgets)
+Requires:	htmlscript
+BuildRequires:	make
+BuildArch:	noarch
 
 %description
 Introduce new users to the OpenMandriva Lx.
@@ -23,9 +19,7 @@ Introduce new users to the OpenMandriva Lx.
 %apply_patches
 
 %build
-cd launcher
-CXXFLAGS="%{optflags}" LDFLAGS="%{optflags}" cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix} -G Ninja
-ninja
+# Nothing to do here...
 
 %install
 %makeinstall_std
@@ -34,7 +28,6 @@ ninja
 
 %files -f om-welcome.lang
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
-%{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
 %{_datadir}/applications/om-welcome.desktop
