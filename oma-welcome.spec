@@ -16,7 +16,7 @@ Introduce new users to the OpenMandriva Lx.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 # Nothing to do here...
