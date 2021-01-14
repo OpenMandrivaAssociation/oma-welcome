@@ -1,5 +1,5 @@
 Name:		oma-welcome
-Version:	2.1.30
+Version:	2.1.31
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
@@ -28,6 +28,8 @@ Introduce new users to the OpenMandriva Lx.
 
 %files -f om-welcome.lang
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
+%{_bindir}/enable-repo
+%{_bindir}/disable-repo
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
