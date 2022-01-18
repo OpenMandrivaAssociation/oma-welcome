@@ -1,5 +1,5 @@
 Name:		oma-welcome
-Version:	2.3.4
+Version:	2.3.5
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
