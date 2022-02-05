@@ -1,6 +1,6 @@
 Name:		oma-welcome
-Version:	2.3.9
-Release:	2
+Version:	2.3.10
+Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
@@ -15,14 +15,13 @@ BuildArch:	noarch
 Introduce new users to the OpenMandriva Lx.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 # Nothing to do here...
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang om-welcome
 
