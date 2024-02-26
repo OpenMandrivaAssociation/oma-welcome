@@ -1,12 +1,12 @@
 Name:		oma-welcome
 Version:	2.5.7
-Release:	1
+Release:	2
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/oma-welcome
 Source0:	https://github.com/OpenMandrivaSoftware/oma-welcome/archive/%{version}.tar.gz
-Requires:	kdialog
+Requires:	(kdialog or plasma6-kdialog)
 Requires:	htmlscript >= 1.0.1
 BuildRequires:	make
 BuildArch:	noarch
