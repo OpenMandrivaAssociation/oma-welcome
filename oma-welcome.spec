@@ -9,6 +9,7 @@ Source0:	https://github.com/OpenMandrivaSoftware/oma-welcome/archive/%{version}.
 Requires:	(kdialog or plasma6-kdialog)
 Requires:	htmlscript >= 1.0.1
 BuildRequires:	make
+BuildRequires:	gettext
 BuildArch:	noarch
 
 %description
