@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 Name:		oma-welcome
 Version:	2.5.9
 Release:	1
