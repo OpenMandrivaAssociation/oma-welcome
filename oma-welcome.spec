@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 Name:		oma-welcome
-Version:	2.5.10
+Version:	2.5.11
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
