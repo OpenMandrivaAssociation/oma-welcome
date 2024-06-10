@@ -1,6 +1,5 @@
-%undefine _debugsource_packages
 Name:		oma-welcome
-Version:	2.5.11
+Version:	2.6.0
 Release:	1
 Summary:	OpenMandriva Lx Welcome Page
 License:	GPLv2
@@ -8,7 +7,7 @@ Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/oma-welcome
 Source0:	https://github.com/OpenMandrivaSoftware/oma-welcome/archive/%{version}.tar.gz
 Requires:	(kdialog or plasma6-kdialog)
-Requires:	htmlscript >= 1.0.1
+Requires:	htmlscript >= 1.2.0
 BuildRequires:	make
 BuildRequires:	gettext
 BuildArch:	noarch
@@ -29,8 +28,6 @@ Introduce new users to the OpenMandriva Lx.
 
 %files -f om-welcome.lang
 %{_sysconfdir}/xdg/autostart/om-welcome.desktop
-%{_bindir}/enable-repo
-%{_bindir}/disable-repo
 %{_bindir}/om-welcome
 %{_bindir}/om-welcome-launcher
 %{_datadir}/%{name}/*
